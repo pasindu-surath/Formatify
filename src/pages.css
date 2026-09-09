@@ -1,0 +1,447 @@
+.page-hero {
+  text-align: center;
+  padding: var(--s8) 0 var(--s7);
+}
+.page-hero h1 {
+  margin-top: 0;
+}
+.page-hero .lede {
+  max-width: 620px;
+}
+.plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s5);
+  max-width: 940px;
+}
+.plan {
+  padding: var(--s7);
+  border: var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+.plan.featured {
+  border: 2px solid var(--brand);
+  background: var(--brand-soft);
+  box-shadow: var(--glow);
+}
+.plan .pill {
+  margin-bottom: var(--s5);
+}
+.plan h2 {
+  margin-bottom: var(--s3);
+}
+.plan > .muted {
+  min-height: 3.3em;
+}
+.price {
+  font-size: var(--h2);
+  font-weight: 700;
+  letter-spacing: var(--tracking-heading);
+  margin: var(--s5) 0;
+}
+.price span {
+  font-size: var(--sm);
+  letter-spacing: normal;
+  font-weight: 400;
+  color: var(--muted);
+}
+.plan > .btn {
+  width: 100%;
+}
+.plan-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s5) 0;
+  display: grid;
+  gap: var(--s3);
+  font-size: var(--sm);
+}
+.plan-list li:before {
+  content: "✓";
+  color: var(--brand-ink);
+  margin-right: var(--s3);
+}
+.plan > .note {
+  margin-top: auto;
+}
+.page-section {
+  padding: var(--s8) 0;
+}
+.table-scroll {
+  overflow-x: auto;
+  border: var(--border);
+  border-radius: var(--radius);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--sm);
+}
+th,
+td {
+  padding: var(--s4) var(--s5);
+  border-bottom: var(--border);
+}
+thead {
+  background: var(--surface);
+}
+tbody th {
+  font-weight: 500;
+}
+tbody tr:last-child > * {
+  border-bottom: 0;
+}
+td:last-child {
+  color: var(--brand-ink);
+}
+.page-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  padding: var(--s6);
+  background: var(--surface);
+  border: var(--border);
+  border-radius: var(--radius);
+  margin-bottom: var(--s8);
+}
+.page-callout > svg {
+  color: var(--brand-ink);
+  flex-shrink: 0;
+}
+.page-callout > div {
+  flex: 1;
+}
+.page-callout p {
+  font-size: var(--sm);
+  color: var(--muted);
+  margin-top: var(--s2);
+}
+.page-callout .btn {
+  flex-shrink: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 2.3fr;
+  gap: var(--s8);
+  padding-bottom: var(--s8);
+}
+.faq-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s3);
+  font-size: var(--sm);
+}
+.faq-aside > a {
+  color: var(--muted);
+}
+.aside-note {
+  padding: var(--s5);
+  background: var(--surface);
+  border: var(--border);
+  border-radius: var(--radius);
+  margin-top: var(--s5);
+}
+.aside-note h3 {
+  margin: var(--s4) 0 var(--s2);
+  font-size: var(--lg);
+}
+.text-link {
+  display: inline-block;
+  color: var(--brand-ink);
+  font-size: var(--sm);
+  font-weight: 600;
+  margin-top: var(--s4);
+}
+.faq-group + .faq-group {
+  margin-top: var(--s7);
+}
+.faq-group h2 {
+  font-size: var(--h3);
+  margin-bottom: var(--s5);
+}
+details {
+  border-bottom: var(--border);
+}
+summary {
+  cursor: pointer;
+  font-weight: 500;
+  padding: var(--s5) var(--s6) var(--s5) 0;
+  position: relative;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:after {
+  content: "+";
+  position: absolute;
+  right: var(--s2);
+  color: var(--brand-ink);
+  font-size: var(--h3);
+}
+details[open] summary:after {
+  content: "−";
+}
+summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 4px;
+}
+details > p {
+  padding: 0 var(--s6) var(--s5) 0;
+  color: var(--muted);
+  font-size: var(--sm);
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: var(--s8);
+  padding-bottom: var(--s9);
+}
+.contact-info {
+  padding-top: var(--s5);
+}
+.contact-info h2 {
+  font-size: var(--h2);
+  margin: var(--s4) 0;
+}
+.email-link {
+  font-size: var(--h3);
+  color: var(--brand-ink);
+  font-weight: 600;
+  word-break: break-word;
+}
+.contact-info p {
+  margin-top: var(--s3);
+  font-size: var(--sm);
+  max-width: 370px;
+}
+.contact-small {
+  border-top: var(--border);
+  margin-top: var(--s6);
+  padding-top: var(--s6);
+}
+.contact-small > svg {
+  color: var(--brand-ink);
+  margin-bottom: var(--s3);
+}
+.contact-form,
+.account-card {
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: var(--s7);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+.contact-form h2,
+.account-card h2 {
+  font-size: var(--h3);
+  letter-spacing: var(--tracking-subheading);
+  margin-bottom: var(--s3);
+}
+.contact-form > p.muted,
+.account-card p.muted {
+  font-size: var(--sm);
+  margin-bottom: var(--s5);
+}
+label {
+  display: block;
+  font-size: var(--sm);
+  font-weight: 500;
+  margin-bottom: var(--s2);
+}
+input,
+textarea,
+.contact-form select {
+  width: 100%;
+  border: var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: var(--small-radius);
+  padding: var(--s3);
+  font: inherit;
+  margin-bottom: var(--s5);
+}
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+}
+.contact-form > .btn {
+  width: 100%;
+}
+#contact-status {
+  color: var(--brand-ink);
+  font-size: var(--sm);
+  margin-top: var(--s3);
+}
+.account-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--s8);
+  padding-top: var(--s8);
+  padding-bottom: var(--s8);
+}
+.account-story .lede {
+  margin: 0;
+}
+.account-photo {
+  margin-top: var(--s6);
+  max-width: 430px;
+  border: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.account-photo img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.photo-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s3);
+  font-size: var(--xs);
+  background: var(--surface);
+}
+.photo-caption strong {
+  color: var(--brand-ink);
+}
+.account-card > .tabs {
+  margin-bottom: var(--s6);
+}
+.account-notice {
+  padding: var(--s4);
+  border: 1px solid var(--brand);
+  border-radius: var(--small-radius);
+  background: var(--brand-soft);
+  font-size: var(--sm);
+  margin-bottom: var(--s5);
+}
+.account-notice p {
+  margin-top: var(--s2);
+  color: var(--muted);
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+fieldset .btn {
+  width: 100%;
+}
+fieldset:disabled input {
+  opacity: 0.65;
+}
+.account-card .note a {
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .plans {
+    gap: var(--s4);
+  }
+  .plan {
+    padding: var(--s5);
+  }
+  .faq-layout,
+  .contact-layout,
+  .account-layout {
+    gap: var(--s6);
+  }
+  .contact-form,
+  .account-card {
+    padding: var(--s5);
+  }
+  .page-callout {
+    flex-wrap: wrap;
+  }
+  .page-callout > .btn {
+    margin-left: auto;
+  }
+  .account-photo {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .page-hero {
+    padding-top: var(--s7);
+  }
+  .plans,
+  .faq-layout,
+  .contact-layout,
+  .account-layout {
+    grid-template-columns: 1fr;
+  }
+  .faq-aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--s3) var(--s5);
+  }
+  .faq-aside > strong {
+    width: 100%;
+  }
+  .aside-note {
+    display: none;
+  }
+  .plan > .muted {
+    min-height: 0;
+  }
+  .account-story h1 br {
+    display: none;
+  }
+  .account-story {
+    text-align: center;
+  }
+  .account-story .lede {
+    margin: auto;
+  }
+  .account-layout {
+    padding-top: var(--s7);
+  }
+  .page-callout > div {
+    flex-basis: 85%;
+  }
+  .page-callout > .btn {
+    margin-left: 0;
+  }
+  .contact-layout {
+    padding-bottom: var(--s8);
+  }
+  th,
+  td {
+    padding: var(--s3);
+    min-width: 110px;
+  }
+  .page-section .section-head > p {
+    margin-top: var(--s3);
+  }
+}

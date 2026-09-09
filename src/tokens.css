@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/inter-400.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/inter-500.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/inter-600.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/inter-700.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/inter-800.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+}
+:root {
+  --logo-size: 1.5rem;
+  --mark-size: 1.6rem;
+  --tracking-logo: -0.06em;
+  --tracking-hero: -0.065em;
+  --tracking-heading: -0.05em;
+  --tracking-label: -0.035em;
+  --tracking-subheading: -0.03em;
+  --tracking-tight: -0.025em;
+  --tracking-eyebrow: 0.12em;
+  --tracking-dots: 0.22em;
+  --brand: #f97316;
+  --dark-line: #334155;
+  --dark-muted: #b4bfce;
+  --brand-ink: #9a3412;
+  --brand-soft: #fff3e9;
+  --bg: #fff;
+  --surface: #f8fafc;
+  --ink: #1e293b;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --dark: #0f172a;
+  --on-dark: #f1f5f9;
+  --white: #fff;
+  --font: Inter, Arial, sans-serif;
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --base: 1rem;
+  --lg: 1.125rem;
+  --h3: 1.35rem;
+  --h2: clamp(2rem, 3.7vw, 3rem);
+  --hero: clamp(2.8rem, 5.3vw, 4.6rem);
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+  --s9: 6rem;
+  --radius: 12px;
+  --small-radius: 8px;
+  --pill: 999px;
+  --border: 1px solid var(--line);
+  --shadow: 0 20px 60px #0f172a0d, 0 3px 10px #0f172a05;
+  --glow: 0 20px 110px #f973161c;
+  --width: 1160px;
+  --ease: 180ms ease;
+  --mesh: radial-gradient(ellipse at 70% 50%, #f973160a, transparent 65%);
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #172235;
+  --ink: #f1f5f9;
+  --muted: #a8b5c6;
+  --line: #304057;
+  --brand-soft: #39291f;
+  --brand-ink: #ffad75;
+  --shadow: 0 20px 60px #0003;
+  --mesh: radial-gradient(ellipse at 70% 50%, #f9731610, transparent 65%);
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./design.css";
+@import "./pages.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme inline {
+  --color-brand: var(--brand);
+  --color-canvas: var(--bg);
+  --color-panel: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-edge: var(--line);
+  --font-sans: var(--font);
+}
+/* Shared controls are composed with Tailwind; retained page geometry preserves the approved design. */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-edge px-6 py-3 text-sm font-semibold;
+}
+.btn.primary {
+  @apply bg-brand text-slate-900 border-brand;
+}
+.icon-btn {
+  @apply inline-flex items-center justify-center;
+}
+.allowance {
+  @apply my-6 rounded-xl border border-edge bg-panel p-6;
+}
+.password-row {
+  @apply flex gap-2 mb-6;
+}
+.password-row input {
+  @apply mb-0 min-w-0;
+}
+.password-row .btn {
+  @apply w-auto;
+}
+.status {
+  @apply mt-4 text-sm;
+  color: var(--brand-ink);
+}
+.status:empty {
+  display: none;
+}
