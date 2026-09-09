@@ -133,7 +133,7 @@ export default function App() {
               </div>
               <div>
                 <strong>Let’s talk</strong>
-                <a href="mailto:hello@formatify.com">hello@formatify.com</a>
+                <a href="pasindusurath23460@gmail.com">pasindusurath23460@gmail.com</a>
                 <a href="https://wa.me/94787168496">WhatsApp Pro: 0787168496</a>
               </div>
             </div>
