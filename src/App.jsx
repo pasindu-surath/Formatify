@@ -6,6 +6,7 @@ import FAQ from "./pages/FAQ.jsx";
 import Contact from "./pages/Contact.jsx";
 import Account from "./pages/Account.jsx";
 import Icon from "./components/Icon.jsx";
+
 const navigation = [
   ["/", "Home"],
   ["/pricing", "Pricing & Pro Plans"],
@@ -13,6 +14,7 @@ const navigation = [
   ["/contact", "Contact"],
   ["/account", "Login / Sign Up"],
 ];
+
 export default function App() {
   const [dark, setDark] = useState(() => {
     try {
@@ -21,14 +23,17 @@ export default function App() {
       return false;
     }
   });
+  
   const [menu, setMenu] = useState(false);
   const location = useLocation();
+  
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? "dark" : "light";
     try {
       localStorage.setItem("formatify-theme", dark ? "dark" : "light");
     } catch {}
   }, [dark]);
+  
   useEffect(() => {
     setMenu(false);
     document.title =
@@ -40,6 +45,7 @@ export default function App() {
       );
     } else window.scrollTo(0, 0);
   }, [location]);
+  
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-ink font-sans">
       <a href="#main" className="skip">
@@ -81,8 +87,10 @@ export default function App() {
             <Link to="/#converter" className="btn primary">
               Convert a file ↗
             </Link>
+            
+            {/* Me button ekatai md:hidden eka add kale */}
             <button
-              className="icon-btn menu-btn"
+              className="icon-btn menu-btn md:hidden"
               aria-label="Toggle navigation"
               aria-expanded={menu}
               aria-controls="navigation"
@@ -90,6 +98,7 @@ export default function App() {
             >
               <Icon name="menu" />
             </button>
+            
           </div>
         </div>
       </header>
@@ -133,7 +142,7 @@ export default function App() {
               </div>
               <div>
                 <strong>Let’s talk</strong>
-                <a href="pasindusurath23460@gmail.com">pasindusurath23460@gmail.com</a>
+                <a href="mailto:pasindusurath23460@gmail.com">pasindusurath23460@gmail.com</a>
                 <a href="https://wa.me/94787168496">WhatsApp Pro: 0787168496</a>
               </div>
             </div>
