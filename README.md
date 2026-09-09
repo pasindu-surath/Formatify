@@ -10,7 +10,7 @@
 Formatify is a modern, responsive web application built with React and Tailwind CSS. It allows users to convert files (Images, Videos, PDFs) entirely in their browser without uploading anything to a server, guaranteeing **100% user privacy**. 
 
 ![Formatify App Screenshot](./public/screenshot.png)
-*(Note: Replace `screenshot.png` in the public folder with a high-res image of the application)*
+
 
 🚀 **Live Demo:** [formatify-nine.vercel.app](https://formatify-nine.vercel.app/)
 
