@@ -23,17 +23,17 @@ export default function App() {
       return false;
     }
   });
-  
+
   const [menu, setMenu] = useState(false);
   const location = useLocation();
-  
+
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? "dark" : "light";
     try {
       localStorage.setItem("formatify-theme", dark ? "dark" : "light");
-    } catch {}
+    } catch { }
   }, [dark]);
-  
+
   useEffect(() => {
     setMenu(false);
     document.title =
@@ -45,7 +45,7 @@ export default function App() {
       );
     } else window.scrollTo(0, 0);
   }, [location]);
-  
+
   return (
     <div className="min-h-screen flex flex-col bg-canvas text-ink font-sans">
       <a href="#main" className="skip">
@@ -74,13 +74,13 @@ export default function App() {
                 {label}
               </NavLink>
             ))}
-            
+
             {/* mobile btn*/}
-            <a 
-              href="https://tally.so/r/xXqeJE" 
-              target="_blank" 
+            <a
+              href="https://tally.so/r/xXqeJE"
+              target="_blank"
               rel="noopener noreferrer"
-              className="hide-on-desktop"
+              className="md:hidden"
               style={{ color: '#ff6b00', fontWeight: 'bold' }}
             >
               Give Feedback 🐛
@@ -98,12 +98,12 @@ export default function App() {
             </button>
 
             {/* 🔴 desktop btn */}
-            <a 
-              href="https://tally.so/r/xXqeJE" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn hide-on-mobile" 
-              style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+            <a
+              href="https://tally.so/r/xXqeJE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn hidden md:flex"
+              style={{ alignItems: 'center', gap: '8px' }}
             >
               Give Feedback 🐛
             </a>
@@ -111,7 +111,7 @@ export default function App() {
             <Link to="/#converter" className="btn primary hide-on-mobile">
               Convert a file ↗
             </Link>
-            
+
             <button
               className="icon-btn menu-btn md:hidden"
               aria-label="Toggle navigation"
