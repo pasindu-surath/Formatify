@@ -1,0 +1,45 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+>
+  <title>Formatify</title>
+
+  <defs>
+    <filter
+      id="glow"
+      x="-25%"
+      y="-25%"
+      width="150%"
+      height="150%"
+      color-interpolation-filters="sRGB"
+    >
+      <feGaussianBlur stdDeviation="5" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="#0F172A" />
+
+  <g
+    fill="none"
+    stroke="#F97316"
+    stroke-width="44"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+  >
+    <!-- Upper arrow: right -->
+    <path d="M128 176H384 M320 112L384 176L320 240" />
+
+    <!-- Lower arrow: left -->
+    <path d="M384 336H128 M192 272L128 336L192 400" />
+  </g>
+</svg>
