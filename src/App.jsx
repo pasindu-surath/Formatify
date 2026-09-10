@@ -74,7 +74,19 @@ export default function App() {
                 {label}
               </NavLink>
             ))}
+            
+            {/* mobile btn*/}
+            <a 
+              href="https://tally.so/r/xXqeJE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hide-on-desktop"
+              style={{ color: '#ff6b00', fontWeight: 'bold' }}
+            >
+              Give Feedback 🐛
+            </a>
           </nav>
+
           <div className="nav-actions">
             <button
               className="icon-btn"
@@ -85,18 +97,18 @@ export default function App() {
               <Icon name="moon" />
             </button>
 
-            {/* අලුත් Feedback Button එක */}
+            {/* 🔴 desktop btn */}
             <a 
               href="https://tally.so/r/xXqeJE" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn" 
+              className="btn hide-on-mobile" 
               style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
             >
               Give Feedback 🐛
             </a>
 
-            <Link to="/#converter" className="btn primary">
+            <Link to="/#converter" className="btn primary hide-on-mobile">
               Convert a file ↗
             </Link>
             
