@@ -84,11 +84,22 @@ export default function App() {
             >
               <Icon name="moon" />
             </button>
+
+            {/* අලුත් Feedback Button එක */}
+            <a 
+              href="https://tally.so/r/xXqeJE" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn" 
+              style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+            >
+              Give Feedback 🐛
+            </a>
+
             <Link to="/#converter" className="btn primary">
               Convert a file ↗
             </Link>
             
-            {/* Me button ekatai md:hidden eka add kale */}
             <button
               className="icon-btn menu-btn md:hidden"
               aria-label="Toggle navigation"
@@ -98,7 +109,6 @@ export default function App() {
             >
               <Icon name="menu" />
             </button>
-            
           </div>
         </div>
       </header>
