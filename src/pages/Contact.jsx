@@ -47,8 +47,8 @@ export default function Contact() {
               <Icon name="file" />
             </div>
             <h2>{"Email us."}</h2>
-            <a className="email-link" href="mailto:hello@formatify.com">
-              {"hello@formatify.com \u2197"}
+            <a className="email-link" href="mailto:pasindusurath23460@gmail.com">
+              {"pasindusurath23460@gmail.com \u2197"}
             </a>
             <p className="muted">{"For questions about Formatify and Pro."}</p>
           </article>
