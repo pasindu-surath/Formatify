@@ -368,15 +368,17 @@ export default function Converter() {
   }
   return (
     <div className="browser" id="converter">
-      <div className="browser-bar">
-        <span className="dots" aria-hidden="true">
+      {/* header*/}
+      <div className="browser-bar" style={{ display: "flex", alignItems: "center", justifyContent: "between", width: "100%", paddingLeft: "1rem", paddingRight: "1rem" }}>
+        <span className="dots" aria-hidden="true" style={{ flex: 1, textAlign: "left" }}>
           ● ● ●
         </span>
-        <span>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", justifyContent: "center" }}>
           <Icon name="lock" /> Local converter
         </span>
-        <span>No file uploads</span>
+        <span style={{ flex: 1, textAlign: "right" }}>No file uploads</span>
       </div>
+      
       <div className="converter">
         <div className="tabs" role="tablist" aria-label="Conversion category">
           {categories.map((name, index) => (
