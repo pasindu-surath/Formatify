@@ -83,7 +83,7 @@ export default function App() {
               className="md:hidden"
               style={{ color: '#ff6b00', fontWeight: 'bold' }}
             >
-              Give Feedback 🐛
+              Give Feedback 
             </a>
           </nav>
 
@@ -105,7 +105,7 @@ export default function App() {
               className="btn hidden md:flex"
               style={{ alignItems: 'center', gap: '8px' }}
             >
-              Give Feedback 🐛
+              Give Feedback 
             </a>
 
             <Link to="/#converter" className="btn primary hide-on-mobile">
