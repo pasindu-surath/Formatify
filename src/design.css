@@ -821,8 +821,8 @@ svg {
 }
 
 /* Hide mobile menu button on desktop */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .menu-btn {
     display: none !important;
   }
-} */
+}
